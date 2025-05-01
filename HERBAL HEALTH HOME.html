@@ -1,0 +1,230 @@
+<html >
+<head>
+   
+    <title>Clinic - Dr. Syed Abdul Rashid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #004080;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .navbar-brand, .nav-link {
+            color: white ;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        .hero {
+   
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+        
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            padding: 0 1rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn-custom {
+            background-color: #fefdfc;
+            border: none;
+            color: black;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #fcfcfb;
+        }
+        section {
+            padding: 4rem 0;
+        }
+        .accordion-button:not(.collapsed) {
+            color: #000;
+            background-color: #fefefd;
+        }
+        .accordion-item {
+            border: none;
+            background-color: #004080;
+        }
+        .accordion-button {
+            background-color: #00264d;
+            color: white;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #000;
+            padding: 1rem;
+            text-align: center;
+        }
+        .contact-card {
+            background-color: #00264d;
+            border: 2px solid #dcdbdb;
+            border-radius: 15px;
+            padding: 2rem;
+            color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact-card h3 {
+            color: #dadada;
+            margin-bottom: 1rem;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .map-container {
+            margin-top: 2rem;
+            border: 2px solid #fcfcfb;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+        .disclaimer {
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            color: #f0eaea;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="HERBAL HEALTH HOME.html" data-bs-toggle="tooltip" title="Back to Home Page">HERBAL HEALTH HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="services.html" data-bs-toggle="tooltip" title="See what we offer">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-bs-toggle="tooltip" title="Get in touch">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html" data-bs-toggle="tooltip" title="Access your account">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="background: url(https://plus.unsplash.com/premium_photo-1666264200754-1a2d5f2f6695?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center/cover;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+<h1>Natural Healing Through Unani and Ayurveda</h1>
+<p>Experience the best of traditional Unani and Ayurveda medicine in a calming and natural environment.</p>
+            <a href="article.html" class="btn btn-custom" data-bs-toggle="tooltip" title="Explore articles and remedies">View Articles</a>
+        </div>
+    </section>
+  
+    <section class="bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingOne">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+What is Unani medicine?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+Unani medicine is a traditional healing system that originated in Greece and is widely practiced in South Asia.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+How can Ayurveda help in healing?
+             </button>
+                    </h2>
+<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+Ayurveda is a holistic healing practice that uses herbal treatments, diet, and lifestyle changes to promote physical and mental health.
+</div>
+                    </div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingThree">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+Do you offer online consultations?
+</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            No, but you can contact us via phone to schedule an appointment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-white text-center">
+        <div class="container">
+            <div class="contact-card">
+<h3>Visit Our Clinic</h3>
+<p><strong>Dr. Syed Abdul Rashid's Herbal Health Home</strong></p>
+<p>Iqbal Market Sopore, Kashmir</p>
+<p>📞 <strong>Phone:</strong> +91 954123944*</p>
+<div class="map-container mt-4">
+                    <iframe src="https://www.google.com/maps?q=Iqbal+Market+Sopore+Kashmir&output=embed" allowfullscreen></iframe>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="text-white">
+        &copy; 2025 Herbal Health Home | All Rights Reserved
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltipTriggerList.forEach(tooltipTriggerEl => {
+            new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
+</body>
+</html>
